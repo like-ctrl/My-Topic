@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>我的个人主页</title>
+    <link rel="stylesheet" href="https://www.w3schools.cn/w3css/4/w3.css">
+    <link rel="shortcut icon" href="/static/images/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div style="color:green" >
+        <h1 class="titl">我的成就</h1>
+        <h2>截至2023.4.26，我拥有如下成就：</h2>
+        <div class="w3-bar w3-lime">
+            <button class="btn btn-outline-info" onclick="openCity('get')">获得</button>
+            <button class="btn btn-outline-info" onclick="openCity('like')">点赞</button>
+            <button class="btn btn-outline-info" onclick="openCity('view')">浏览</button>
+            
+        </div>
+
+        <div id="get" class="w3-container city">
+            <h2>获得</h2>
+            <div class="row">
+                <div class="col-3">
+                    
+                    <p>London is the capital city of England.</p>
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div id="like" class="w3-container city" style="display:none">
+            <h2>点赞</h2>
+            <p>Paris is the capital of France.</p> 
+        </div>
+
+        <div id="view" class="w3-container city" style="display:none">
+            <h2>浏览</h2>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+
+    </div>
+    <script>
+    function openCity(cityName) {
+        var i;
+        var x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        document.getElementById(cityName).style.display = "block";  
+    }
+    </script>
+    
+</body>
+</html>

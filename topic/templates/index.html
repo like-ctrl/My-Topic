@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>我的个人主页</title>
+    <link rel="shortcut icon" href="/static/images/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class = "col-3">
+            <div class="mess">
+                <br>
+                <br>
+                <div>
+                    <button type="button" class="btn btn-dark">
+                        查看消息
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            99+
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-5">
+            
+        </div>
+        <div class="col-4">
+            <h3>{{ text }}</h3>
+            <h4>第{{ th }}次 访问我的主页</h4>
+        </div>
+    </div>
+    <div style="color:green" >
+        <h1 class="titl">Hello,欢迎来到我的个人主页</h1>
+        <h2>&ensp;&ensp;&ensp;&ensp;欢迎查看关于我的内容！ </h2>
+        <br>
+        <h1>-----------------</h1>
+        <h3>跳转</h3>
+    </div>
+    <div class="btn-group btn-group-lg" role="group" aria-label="...">
+        <a href="/;" class="btn btn-primary">
+            我的爱好
+        </a>
+        <a href="/works" class="btn btn-primary">
+                我的优秀作品
+        </a>
+        <a href="/face" class="btn btn-primary">
+            我的成就
+        </a>
+        
+    </div>
+    
+</body>
+</html>

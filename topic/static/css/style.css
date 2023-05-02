@@ -1,0 +1,33 @@
+body{
+    width: 800px;
+    height: 600px;
+    background: #6fd2d8;  /*设置背景色*/
+    width :auto;    /*【重要】自动对齐*/
+    text-align: left;  /*左对齐*/
+    color: green;
+}
+.col-3{
+    color: green;
+}
+.titl{
+    width :auto;
+    text-align: center;
+}
+.sho1{
+    color:green;
+}
+.hub{
+    color:white;
+}
+.zj{
+    color: blue;
+}
+.mess{
+    width: 200px; height: 150px;
+
+    border: solid 1px #aaaaaa;
+
+    border-radius: 10px 5px 10px 5px;
+    background: #7d878c;
+    text-align :center;
+}
